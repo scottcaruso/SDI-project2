@@ -4,12 +4,19 @@
 // Topic TBD
 
 var managerName= "Joe Smith",
-	runsTeamIsWinningBy = 5,
+	currentInning = 5,
 	isPitcherTired = true,
-	pitchersInBullpen = ["Lefty Jones","Righty Adams","Southpaw Stevens","Knuckleball Kid","Melvin Eggs"]	
+	pitchersInBullpen = [
+		"Lefty Jones","
+		Righty Adams",
+		"Southpaw Stevens",
+		"Knuckleball Kid",
+		"Melvin Eggs"
+	]
 ;
 
 console.log(managerName,runsTeamIsWinningBy,isPitcherTired,pitchersInBullpen);
+
 
 
 
