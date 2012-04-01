@@ -3,7 +3,39 @@
 // Deliverable 2
 // Topic TBD
 
+var pitcherName = "Joe Smith",
+	contractAmount = 14000000,
+	winsPerSeason = [16,9,14,21,18]
+;
+
+console.log(pitcherName,contractAmount,winsPerSeason);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Comments and practice work below
+
 // While/For - condition checked repeatedly until the condition is no longer true.
+//Need to have a while and a for in the project.
+
 
 /*
 While/For practice code
@@ -24,11 +56,11 @@ for (var bonab = 99; bonab > 0; bonab--) {
 };
 
 console.log("No more bottles of non-alcholic beverage.");
-*/
+
 
 //typical usage of for loop listed below
 for (var i = 0; i < max; i++) {};
-
+*/
 
 
 
