@@ -1,4 +1,20 @@
-alert("JavaScript works!");
+// Scott Caruso
+// Date: 4/4/2012
+// Deliverable 2
+// Topic TBD
+
+// While - condition checked repeatedly until the condition is no longer true.
+
+var bonab = 99;
+
+while (bonab > 0) {
+	console.log(bonab + " bottles of non-alcoholic beverage on the wall.");
+	bonab--;
+};
+
+console.log("No more bottles of non-alcholic beverage.");
+
+
 
 // Adding a comment simply to modify the file for a test addition to the respository;
 
