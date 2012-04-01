@@ -3,8 +3,10 @@
 // Deliverable 2
 // Topic TBD
 
-// While - condition checked repeatedly until the condition is no longer true.
+// While/For - condition checked repeatedly until the condition is no longer true.
 
+/*
+While/For practice code
 var bonab = 99;
 
 while (bonab > 0) {
@@ -13,6 +15,30 @@ while (bonab > 0) {
 };
 
 console.log("No more bottles of non-alcholic beverage.");
+
+
+// For - 
+
+for (var bonab = 99; bonab > 0; bonab--) {
+	console.log(bonab + " bottles of non-alcoholic beverage on the wall.");
+};
+
+console.log("No more bottles of non-alcholic beverage.");
+*/
+
+//typical usage of for loop listed below
+for (var i = 0; i < max; i++) {};
+
+
+
+
+
+
+
+
+
+
+
 
 
 
