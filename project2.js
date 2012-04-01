@@ -3,12 +3,13 @@
 // Deliverable 2
 // Topic TBD
 
-var pitcherName = "Joe Smith",
-	contractAmount = 14000000,
-	winsPerSeason = [16,9,14,21,18]
+var managerName= "Joe Smith",
+	runsTeamIsWinningBy = 5,
+	isPitcherTired = true,
+	pitchersInBullpen = ["Lefty Jones","Righty Adams","Southpaw Stevens","Knuckleball Kid","Melvin Eggs"]	
 ;
 
-console.log(pitcherName,contractAmount,winsPerSeason);
+console.log(managerName,runsTeamIsWinningBy,isPitcherTired,pitchersInBullpen);
 
 
 
