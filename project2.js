@@ -15,10 +15,12 @@ var managerName= "Joe Smith",
 	]
 ;
 
-console.log(managerName,runsTeamIsWinningBy,isPitcherTired,pitchersInBullpen);
+console.log(managerName,currentInning,isPitcherTired,pitchersInBullpen);
 
 
-
+//array syntax
+//variableName [x] where x = position of element in array
+//e.g. pitchersInBullpen [2] would be "Southpaw Stevens"
 
 
 
