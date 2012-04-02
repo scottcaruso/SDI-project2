@@ -7,8 +7,8 @@ var managerName= "Joe Smith",
 	currentInning = 5,
 	isPitcherTired = true,
 	pitchersInBullpen = [
-		"Lefty Jones","
-		Righty Adams",
+		"Lefty Jones",
+		"Righty Adams",
 		"Southpaw Stevens",
 		"Knuckleball Kid",
 		"Melvin Eggs"
@@ -21,9 +21,16 @@ console.log(managerName,currentInning,isPitcherTired,pitchersInBullpen);
 //array syntax
 //variableName [x] where x = position of element in array
 //e.g. pitchersInBullpen [2] would be "Southpaw Stevens"
+//can add items to array later in code
+//use variableName [y] where y = some array position that doesn't exist
+//e.g. pitchersInBullpen [5] = "Lee Smith";
+//to add something to end of array, use "push" command
+//e.g. pitchersInBullpen.push = ("Lee Smith");
+//variableName.pop and variableName.shift to remove last or first items
 
-
-
+for (var i=0, k=pitchersInBullpen.length; i < k; i++) {
+	console.log(pitchersInBullpen [i])
+};
 
 
 
