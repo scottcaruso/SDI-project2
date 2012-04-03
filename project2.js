@@ -1,10 +1,12 @@
 // Scott Caruso
 // Date: 4/4/2012
 // Deliverable 2
-// Topic TBD
+// Topic: World Series Bullpen Management
 
 var managerName = "Joe Smith",
+	worldSeriesGameNumber = 7,
 	teamName = "Ruffians",
+	teamIsWinning = true,
 	opponentName = "Pansies",
 	inningsPitchedByStarter = 5,
 	pitchersInBullpen = [
@@ -18,9 +20,32 @@ var managerName = "Joe Smith",
 	pitchersToRelease = 3
 ;
 
-/*Number Function  -- This code includes a function for calculating the number of innings left, then performs a "while"
-statement to determine when the manager can finally go to the bullpen.
-*/
+/*Procedure - function that doesn't return a value. For this, we are simply
+determining if the story can start. There is no value used in the rest of the story.*/
+var canStoryStart = function (worldSeriesGameNumber) {
+	if (worldSeriesGameNumber < 7){
+		return console.log("You haven't reached Game 7 of the World Series yet! How about you come back later when the story is more interesting?")
+	} else {
+		return console.log("Welcome to Game 7 of the World Series!")
+		};
+};
+
+canStoryStart(worldSeriesGameNumber);
+
+/*Boolean Comparison function*/
+var isTeamWinning = function (x,y) {
+	var y = true;
+	if (x=y) {
+		return console.log("The manager's team is winning.");
+	} else { return console.log("The manager's team is losing. Abandon all hope!");
+	}
+}; 
+
+var gameStatus = isTeamWinning (teamIsWinning,true);
+
+/*Number Function  -- This code includes a function for calculating the number of innings left.
+
+It then performs a "while" statement to determine when the manager can finally go to the bullpen.*/
 
 var getInningsLeft = function (i) {
 	var inningsLeft = 9 - i;
@@ -35,9 +60,12 @@ while (inningsLeft > 2) {
 	inningsLeft--;
 };
 
-console.log("Now the manager can use his bullpen!")
+console.log("Now the manager can use his bullpen!");
 console.log(inningsLeft);
 
+/*String Function - Take 2 strings, then do something with them*/
+
+/*Array and number function - use them in a For loop. Not a simple index dereference */
 
 /*
 It was Game 7 of the World Series, and [managerName] was sweating bullets.
