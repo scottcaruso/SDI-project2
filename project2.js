@@ -3,6 +3,7 @@
 // Deliverable 2
 // Topic: World Series Bullpen Management
 
+//Defining static variables prior to the story start.
 var managerName = "Joe Smith",
 	worldSeriesGameNumber = 7,
 	teamName = "Ruffians",
@@ -56,12 +57,17 @@ var inningsLeft = getInningsLeft(inningsPitchedByStarter);
 console.log(inningsLeft);
 
 while (inningsLeft > 2) {
-	console.log("There are " + inningsLeft + " innings left until the manager can use his bullpen.");
+	console.log("There are " + inningsLeft + " innings left until the manager can use his bullpen, so he let Roy Verlander-Hernandez pitch for another inning.");
 	inningsLeft--;
 };
 
-console.log("Now the manager can use his bullpen!");
-console.log(inningsLeft);
+
+//REMINDER FOR BELOW -- 10 is used to return the inning that we are CURRENTLY in. If there are 2 innings to play, that means that we are
+//in the 8th inning (8th + 9th). 9-inningsLeft would tell us that it is the 7th inning, which is incorrect.
+
+console.log("It's the " + (10 - inningsLeft) + "th inning now, so the manager can use his bullpen! This game is all but over!");
+
+//console.log(inningsLeft);
 
 /*String Function - Take 2 strings, then do something with them*/
 
