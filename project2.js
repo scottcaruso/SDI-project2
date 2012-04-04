@@ -60,8 +60,9 @@ var playerOfGameBonus = function (bonus,timesWonPerSeason){
 	var totalBonus = (bonus*timesWonPerSeason[i-1])+totalBonus
 	};
 	console.log("Over the life of his contract, he earned $" + totalBonus + " in Player of the Game bonuses.")
-};
+	return totalBonusForUs = totalBonus
 
+};
 
 //Begin story functions
 var budgetRoomLeft = getBudgetRoomLeft(1000000,5000000);
@@ -72,3 +73,4 @@ homeRunsExpected(7);
 console.log(homeRunsForUs);
 console.log(nicknameGenerator("Scott","Kangaroo"));
 playerOfGameBonus(500,[6,15,7,2,8,6,0]);
+console.log(totalBonusForUs);
