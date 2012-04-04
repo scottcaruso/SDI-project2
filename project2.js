@@ -4,9 +4,9 @@
 // Topic: Picking a new leadoff hitter
 
 
-//One function that simply outputs, no return
+// Output function. Story continues regardless. Simply for flavor at start of story.
 
-var leadoffHitter = function (playerType,teamWants) {
+var getTypeOfPlayer = function (playerType,teamWants) {
 	if (playerType === teamWants){
 		console.log("We're looking for a " + teamWants + " type player. He's exactly what we're looking for!");
 	} else {
@@ -14,7 +14,7 @@ var leadoffHitter = function (playerType,teamWants) {
 	}; // End of if statement
 }; // End of leadoffHitter function
 
-//Boolean comparison between two arguments and returns a value.
+//Boolean comparison between what salary the player wants versus the amount of budget room we have.
 
 var getBudgetRoomLeft = function (salaryPlayerWants,budgetRoom) {
 	if (salaryPlayerWants <= budgetRoom){
@@ -41,16 +41,20 @@ var homeRunsExpected = function (contractLength) {
 };
 
 //String function, then return a value
+var nicknameGenerator = function (playerFirstName,favoriteAnimal){
+	var flavors = ["-Legs","-Arms","-Face","-Stink","-Lover"];
+	var flavorRandom = flavors[Math.floor(Math.random()*flavors.length)];
+	return favoriteAnimal+flavorRandom+ " " + playerFirstName;
+};
 
 // Array, for loop somehow, return a value
-
-
 
 
 //Begin story functions
 var budgetRoomLeft = getBudgetRoomLeft(1000000,5000000);
 
-leadoffHitter("speed","power");
+getTypeOfPlayer("speed","power");
 console.log("If we want to sign this player, we will have $" + budgetRoomLeft + " left for other player transactions.");
 homeRunsExpected(7);
 console.log(homeRunsForUs);
+console.log(nicknameGenerator("Scott","Octopus"))
