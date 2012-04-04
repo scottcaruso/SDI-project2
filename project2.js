@@ -1,8 +1,7 @@
 // Scott Caruso
 // Date: 4/4/2012
 // Deliverable 2
-// Topic: Picking a new leadoff hitter
-
+// Topic: New Free Agent Hitter
 
 // Output function. Story continues regardless. Simply for flavor at start of story.
 
@@ -24,7 +23,10 @@ var getBudgetRoomLeft = function (salaryPlayerWants,budgetRoom) {
 	}; 
 }; // End of getBudgetRoomLeft function
 
-// Single number, while loop somehow, return a value
+// Input a contract length. Calculate the number of home runs that the player will hit per season based on an anticipated rate of decline.
+// Returns a total number of home runs over the duration of the contract. Decline per season, home runs before coming to the team are all
+// variable and adjustable.
+
 var homeRunsExpected = function (contractLength) {
 	var declinePerSeason = .15;
 	var homeRunsLastYear = 43;
@@ -37,19 +39,28 @@ var homeRunsExpected = function (contractLength) {
 		var homeRunsLastYear=(homeRunsLastYear*(1-declinePerSeason))
 		var totalHomeRunsForUs = homeRunsLastYear+totalHomeRunsForUs
 		};
-			return homeRunsForUs = Math.floor(totalHomeRunsForUs) // returns variable homeRunsForUs
+			return homeRunsForUs = Math.floor(totalHomeRunsForUs) // returns variable for total home runs he hits as a member of our team
 };
 
 //String function, then return a value
+
 var nicknameGenerator = function (playerFirstName,favoriteAnimal){
 	var flavors = ["-Legs","-Arms","-Face","-Stink","-Lover"];
-	var flavorRandom = Math.floor(Math.random()*(flavors.length))
-	var randomFlavor = flavors[flavorRandom]
-	var nickname = favoriteAnimal+randomFlavor+ " " + playerFirstName;
-	return nickname
+	var flavorRandom = Math.floor(Math.random()*(flavors.length));
+	var randomFlavor = flavors[flavorRandom];
+		return nickname = favoriteAnimal+randomFlavor+ " " + playerFirstName;
 };
 
 // Array, for loop somehow, return a value
+
+var playerOfGameBonus = function (bonus,timesWonPerSeason){
+	var totalBonus = 0
+	for (i=1; i <= timesWonPerSeason.length; i++) {
+		console.log(nickname+"'s bonus for Season " + i + " was $" + bonus*timesWonPerSeason[i-1] + ".")	
+	var totalBonus = (bonus*timesWonPerSeason[i-1])+totalBonus
+	};
+	console.log("Over the life of his contract, he earned $" + totalBonus + " in Player of the Game bonuses.")
+};
 
 
 //Begin story functions
@@ -60,3 +71,4 @@ console.log("If we want to sign this player, we will have $" + budgetRoomLeft + 
 homeRunsExpected(7);
 console.log(homeRunsForUs);
 console.log(nicknameGenerator("Scott","Kangaroo"));
+playerOfGameBonus(500,[6,15,7,2,8,6,0]);
