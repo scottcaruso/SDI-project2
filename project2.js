@@ -37,14 +37,16 @@ var homeRunsExpected = function (contractLength) {
 		var homeRunsLastYear=(homeRunsLastYear*(1-declinePerSeason))
 		var totalHomeRunsForUs = homeRunsLastYear+totalHomeRunsForUs
 		};
-	return homeRunsForUs = Math.floor(totalHomeRunsForUs) // returns variable homeRunsForUs
+			return homeRunsForUs = Math.floor(totalHomeRunsForUs) // returns variable homeRunsForUs
 };
 
 //String function, then return a value
 var nicknameGenerator = function (playerFirstName,favoriteAnimal){
 	var flavors = ["-Legs","-Arms","-Face","-Stink","-Lover"];
-	var flavorRandom = flavors[Math.floor(Math.random()*flavors.length)];
-	return favoriteAnimal+flavorRandom+ " " + playerFirstName;
+	var flavorRandom = Math.floor(Math.random()*(flavors.length))
+	var randomFlavor = flavors[flavorRandom]
+	var nickname = favoriteAnimal+randomFlavor+ " " + playerFirstName;
+	return nickname
 };
 
 // Array, for loop somehow, return a value
@@ -57,4 +59,4 @@ getTypeOfPlayer("speed","power");
 console.log("If we want to sign this player, we will have $" + budgetRoomLeft + " left for other player transactions.");
 homeRunsExpected(7);
 console.log(homeRunsForUs);
-console.log(nicknameGenerator("Scott","Octopus"))
+console.log(nicknameGenerator("Scott","Kangaroo"));
