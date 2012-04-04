@@ -22,53 +22,35 @@ var getBudgetRoomLeft = function (salaryPlayerWants,budgetRoom) {
 	} else {
 		return (0)
 	}; 
-}; // End of CashLeft function
+}; // End of getBudgetRoomLeft function
 
 // Single number, while loop somehow, return a value
-var getNumberOfPlayersToSign = function (budgetRoomLeft,avgCostOfPlayers) {
-	while (i=0
-
+var homeRunsExpected = function (contractLength) {
+	var declinePerSeason = .15;
+	var homeRunsLastYear = 43;
+	var totalHomeRunsForUs = 0
+	var contractYear = (contractLength-(contractLength-1))
+		while (contractLength > 0) {
+		console.log("We expect that he will hit " + Math.floor(homeRunsLastYear*(1-declinePerSeason)) + " home runs during the " + contractYear + "th year of the contract.");
+		contractLength--
+		contractYear++
+		var homeRunsLastYear=(homeRunsLastYear*(1-declinePerSeason))
+		var totalHomeRunsForUs = homeRunsLastYear+totalHomeRunsForUs
+		};
+	return homeRunsForUs = Math.floor(totalHomeRunsForUs) // returns variable homeRunsForUs
 };
 
 //String function, then return a value
 
 // Array, for loop somehow, return a value
 
+
+
+
+//Begin story functions
+var budgetRoomLeft = getBudgetRoomLeft(1000000,5000000);
+
 leadoffHitter("speed","power");
-console.log("If we want to sign this player, we will have $" + getBudgetRoomLeft(1000000,5000000) + " left for other player transactions.")
-
-
-// Adding a comment simply to modify the file for a test addition to the respository;
-
-/* Comments to remind myself about logical operation operators
-
-AND p && q
-OR p || q
-NOT !p
-XOR (p || q) && !(p && q)
-
-*/
-
-/* Practice problems
-Given p ∧ (q ∨ r)
-
-if (p && (q || r) ) {
-	console.log ("The expression is true");
-} else {
-	console.log ("The expression is false");
-}
-
-Given (p ∧¬ q) ∨ (q ∧ r)
-if ((p && !q) || (q && r) {
-	console.log ("The expression is true");
-} else {
-	console.log ("The expression is false");
-}
-
-Given ¬(p ∨ r)
-if !(p || r) {
-	console.log ("The expression is true");
-} else {
-	console.log ("The expression is false");
-}
-*/
+console.log("If we want to sign this player, we will have $" + budgetRoomLeft + " left for other player transactions.");
+homeRunsExpected(7);
+console.log(homeRunsForUs);
